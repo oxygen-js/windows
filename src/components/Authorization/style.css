@@ -1,5 +1,49 @@
+.title-bar{
+    cursor: pointer;
+}
+
 .window-authorization{
     padding: 20vh;
-    width: 450px;
+    width: 400px;
     margin: auto;
+}
+
+.window-authorization_bg{
+    width: 99%;
+    height: 100px;
+    background: #3B77BC url(../../assets/img/authorization/loginwindowsxp.jpg) center center no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.window-authorization__form{
+    display: flex;
+    margin-top: 15px;
+}
+
+.window-authorization__form > span{
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.window-authorization__form > span input{
+    width: 90%;
+    display: inline-block;
+    border: 1px solid #b3b3b3;
+}
+
+.window-authorization__form span > span {
+    width: 25%;
+}
+
+/*BUTTONS BLOCK*/
+.window-authorization__btns{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.window-authorization__btns button{
+    margin-right: 10px;
 }
