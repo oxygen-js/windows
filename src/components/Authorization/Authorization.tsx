@@ -10,9 +10,7 @@ const Authorization:React.FC = () => {
                         Log On to Windows
                     </div>
                 </div>
-                <div className="window-authorization_bg">
-
-                </div>
+                <div className="window-authorization_bg" />
                 <div className="window-body">
                     <form className="field-row-stacked window-authorization__form">
                         <span>
@@ -36,7 +34,7 @@ const Authorization:React.FC = () => {
                             Cancel
                         </button>
                         <button>
-                            Options >>
+                            Options
                         </button>
                     </div>
                 </div>
