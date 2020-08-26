@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Authorization from './components/Authorization/Authorization'
 
-function App() {
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main">
+      <Authorization />
+    </main> 
   );
 }
 
 export default App;
+
+// https://www.youtube.com/watch?v=OvLWWvjoi8s&t=1s
+// 16-00 = Формы как с ними работать
+// 20-00 = Создание стейта
+// 27-00 = Обработка инпута с помощью useRef()
+// 30-00 = Связь компонентов Todo => App
+// 35-00 = Создание TodoList
+// 48-00 = Выполнение и Удаление элементов TodoList
+// 54-00 = Создание конфирма b
+// 1-00-00 = useEffect() для сохранения листов
+// 1-06-00 = Работа с Router + TypeScript
+// 1-11-00 = Установка специального пакета
