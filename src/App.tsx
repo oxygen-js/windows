@@ -1,24 +1,18 @@
 import React from 'react';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Authorization from './components/Authorization/Authorization';
-import Desktop from './Desktop';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
-
+import Desktop from './page/Desktop/Desktop';
 
 const App: React.FC = () => {
   return (
     <main className="main">
       <BrowserRouter>
         <Switch>
-          <Route path="/">
-            <Authorization />
-          </Route>
-          <Route path="/desktop">
-            <Desktop />
-          </Route>
+          <Route component={Authorization} path="/" exact />
+          <Route component={Desktop} path="/desktop" />
         </Switch>
       </BrowserRouter>
-    </main> 
+    </main>
   );
 }
 

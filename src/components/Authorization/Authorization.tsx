@@ -1,7 +1,14 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import './style.css';
 
 const Authorization:React.FC = () => {
+    let history = useHistory();
+
+    function handleClick() {
+        history.push("/desktop");
+    }
+
     return(
         <div className="window-authorization">
             <div className="window">
@@ -27,7 +34,7 @@ const Authorization:React.FC = () => {
                         </span>
                     </form>
                     <div className="window-authorization__btns">
-                        <button className="focused">
+                        <button className="focused" onClick={handleClick}>
                             Ok
                         </button>
                         <button>
