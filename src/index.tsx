@@ -5,9 +5,18 @@ import './normalize.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+/* Import Redux */
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import {showingWindow} from './redux/reducer/reducer'
+
+const store = createStore(showingWindow)
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

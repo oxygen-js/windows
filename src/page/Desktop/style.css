@@ -1,3 +1,7 @@
+:root{
+    --xp-blue: #3B77BC;
+}
+
 .desktop{
     background:  url(../../assets/img/desktop/windows-xp.jpg) center no-repeat;
     background-size: cover;
@@ -6,11 +10,72 @@
     flex-direction: column;
 }
 
+.desktop-start-block{
+    margin-top: auto;
+}
+
+.desktop-start-block_content{
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    box-sizing: border-box;
+    width: 400px;
+    height: 500px;
+    border: 2px solid var(--xp-blue);
+}
+
+.desktop-start-block_content_top{
+    background: var(--xp-blue);
+    height: 50px;
+    padding: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.desktop-start-block_content_main{
+    padding: 10px;
+}
+
+.desktop-start-block_content_bottom{
+    background: var(--xp-blue);
+    height: 40px;
+    border-bottom: 1px solid #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.desktop-start-block_content_bottom a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.desktop-start-block_content_bottom a img{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.desktop-start-block_content_bottom span, .desktop-start-block_content_bottom a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.desktop-start-block_content_bottom span:hover, .desktop-start-block_content_bottom a:hover{
+    background: #3265a0;
+}
+
+
 .desktop-panel{
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
-    background: #3B77BC;
+    background: var(--xp-blue);
     width: 100%;
     height: 30px;
     color: #fff;
