@@ -1,36 +1,17 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 interface Time {
-    hourse: number
-    minutes: number
-    seconds: number
+    date: string 
 }
 
-const ProgramTime:React.FC = () => {
-    let [time, setTime] = useState<Time>({
-        hourse: 0,
-        minutes: 0,
-        seconds: 0
-    });
+let time: any = setInterval(() => new Date().toLocaleTimeString(), 1000)
 
-    useEffect(() => {
-        let date = new Date();
-        setTimeout(() => {
-            setTime({
-                hourse: date.getHours(),
-                minutes: date.getMinutes(),
-                seconds: date.getSeconds()
-            })
-        });
-    },[time]);
-    
-   
+const ProgramTime:React.FC = () => {  
 
     return(
         <div className="desktop-panel_programm">
-            { time.hourse } : { time.minutes } : { time.seconds }
+            { time }
         </div>
     );
 }
-
 export default ProgramTime;

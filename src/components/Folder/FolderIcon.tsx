@@ -6,7 +6,6 @@ type ShowWindow = {
 }
 
 const FolderIcon:React.FC<ShowWindow> = (props) => {
-    console.log(props);
     return(
         <div className="folder-icon" onDoubleClick={() => props.editState({show: !props.showe})}>
             <span className="folder-icon_img" />
