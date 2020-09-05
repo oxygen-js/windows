@@ -4,7 +4,7 @@ export type Time = {
     type: typeof CURRENT_TIME,
 }
 
-export const currentTime = ():Time => {
+export const actionCurrentTime = ():Time => {
     return{
         type: CURRENT_TIME
     }

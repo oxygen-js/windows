@@ -8,9 +8,9 @@ import * as serviceWorker from './serviceWorker';
 /* Import Redux */
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
-import {showingWindow} from './redux/reducer/reducer'
+import rootReducer from './redux/rootReducer'
 
-const store = createStore(showingWindow)
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <React.StrictMode>
