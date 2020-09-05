@@ -2,18 +2,18 @@ import {CURRENT_TIME} from "../type";
 import { Time } from "../actions/actionCurrentTime";
 
 export interface ICurrentTime {
-    time: string
+    current: string
 }
 
 const iniitialState = {
-    time: ''
+    current: ''
 }
 
 export const currentTime = (state:ICurrentTime = iniitialState, action:Time ) => {
     switch (action.type) {
         case CURRENT_TIME:
             return {
-                time: ''
+                current: ''
             }
         default:
             return state;

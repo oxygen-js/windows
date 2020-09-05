@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import ProgramTime from './Programm/PragramTime';
+import ProgramTime from './Programm/ProgramTime';
 import StartMenu from './StartMenu/StartMenu'
 import Folder from '../../components/Folder/Folder';
 import {IShowWindow} from '../interfaces'
