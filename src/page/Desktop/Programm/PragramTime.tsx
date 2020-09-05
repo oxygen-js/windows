@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 interface Time {
     hourse: number
@@ -12,15 +12,19 @@ const ProgramTime:React.FC = () => {
         minutes: 0,
         seconds: 0
     });
+
+    useEffect(() => {
+        let date = new Date();
+        setTimeout(() => {
+            setTime({
+                hourse: date.getHours(),
+                minutes: date.getMinutes(),
+                seconds: date.getSeconds()
+            })
+        });
+    },[time]);
     
-    let date = new Date();
-    setTimeout(() => {
-        setTime({
-            hourse: date.getHours(),
-            minutes: date.getMinutes(),
-            seconds: date.getSeconds()
-        })
-    })
+   
 
     return(
         <div className="desktop-panel_programm">

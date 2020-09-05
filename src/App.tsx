@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import Authorization from './components/Authorization/Authorization';
+import Authorization from './page/Authorization/Authorization';
 import Desktop from './page/Desktop/Desktop';
 
 const App: React.FC = () => {
