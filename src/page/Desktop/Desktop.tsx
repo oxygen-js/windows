@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import ProgramTime from './Programm/PragramTime';
 import StartMenu from './StartMenu/StartMenu'
-import FolderIcon from '../../components/Folder/FolderIcon';
+import Folder from '../../components/Folder/Folder';
 import {IShowWindow} from '../interfaces'
 import './style.css';
 
@@ -12,7 +12,7 @@ const Desktop:React.FC = () => {
     return(
         <div className="desktop">
             <div className="desktop_grid">
-                <FolderIcon />
+                <Folder />
             </div>
             <div className="desktop-start-block">
                 <StartMenu showe={state.show} />
